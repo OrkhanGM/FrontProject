@@ -1,0 +1,2006 @@
+@import 'my-classes';
+// __________________________________________ COLORS __
+// 
+$color-white: #fff;
+$color-yellow:#ffd44c;
+$color-black: black;
+$color-gray:  #808080;;
+// 
+// __________________________________________ END OF COLORS __
+
+
+// __________________________________________ MY DEFAULTS __
+// 
+*{margin: 0px;padding: 0px;color: $color-white;&:focus{outline: none;}}
+button{&:focus{outline: none;}}
+p{display: inline-block; margin: 0px; padding: 0px;}
+a{text-decoration: none;}
+// 
+// __________________________________________ END MY DEFAULTS __
+
+
+// __________________________________________ MY CLASESS __
+// 
+// TRANSITION
+.tran-all-03{transition: all 0.7 linear;}
+// COLOR
+.c-yellow{color: $color-yellow !important;}
+.c-black{color: $color-black !important;}
+.c-white{color: $color-white !important;}
+.c-gray{color: $color-gray !important;}
+// FONT STYLE
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
+// ----------FLEX
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: center;
+}
+.flex-center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+.flex-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+}
+.flex-space-around{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+}
+.flex-space-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    align-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+// ----------PADDING
+// PADDING ALL SIDE
+.p-1{padding: 1px;}
+.p-2{padding: 2px;}
+.p-3{padding: 3px;}
+.p-4{padding: 4px;}
+.p-5{padding: 5px;}
+.p-6{padding: 6px;}
+.p-7{padding: 7px;}
+.p-8{padding: 8px;}
+.p-9{padding: 9px;}
+.p-10{padding: 10px;}
+.p-11{padding: 11px;}
+.p-12{padding: 12px;}
+.p-13{padding: 13px;}
+.p-14{padding: 14px;}
+.p-15{padding: 15px;}
+.p-16{padding: 16px;}
+.p-17{padding: 17px;}
+.p-18{padding: 18px;}
+.p-19{padding: 19px;}
+.p-20{padding: 20px;}
+.p-21{padding: 21px;}
+.p-22{padding: 22px;}
+.p-23{padding: 23px;}
+.p-24{padding: 24px;}
+.p-25{padding: 25px;}
+.p-26{padding: 26px;}
+.p-27{padding: 27px;}
+.p-28{padding: 28px;}
+.p-29{padding: 29px;}
+.p-30{padding: 30px;}
+.p-35{padding: 35px;}
+.p-40{padding: 40px;}
+.p-45{padding: 45px;}
+.p-50{padding: 50px;}
+// PAD BOTTOM
+.p-b-10{padding-bottom: 10px;}
+.p-b-20{padding-bottom: 20px;}
+.p-b-30{padding-bottom: 30px;}
+.p-b-40{padding-bottom: 40px;}
+.p-b-50{padding-bottom: 50px;}
+// PAD TOP
+.p-t-10{padding-top: 10px;}
+.p-t-20{padding-top: 20px;}
+.p-t-30{padding-top: 30px;}
+.p-t-40{padding-top: 40px;}
+.p-t-50{padding-top: 50px;}
+// PAD LEFT
+.p-l-10{padding-left: 10px;}
+.p-l-20{padding-left: 20px;}
+.p-l-30{padding-left: 30px;}
+.p-l-40{padding-left: 40px;}
+.p-l-50{padding-left: 50px;}
+// PAD RIGHT
+.p-r-10{padding-right: 10px;}
+.p-r-20{padding-right: 20px;}
+.p-r-30{padding-right: 30px;}
+.p-r-40{padding-right: 40px;}
+.p-r-50{padding-right: 50px;}
+// ----------MARGIN
+// MARGINAL ALL SIDE
+.m-1{margin: 1px;}
+.m-2{margin: 2px;}
+.m-3{margin: 3px;}
+.m-4{margin: 4px;}
+.m-5{margin: 5px;}
+.m-6{margin: 6px;}
+.m-7{margin: 7px;}
+.m-8{margin: 8px;}
+.m-9{margin: 9px;}
+.m-10{margin: 10px;}
+.m-11{margin: 11px;}
+.m-12{margin: 12px;}
+.m-13{margin: 13px;}
+.m-14{margin: 14px;}
+.m-15{margin: 15px;}
+.m-16{margin: 16px;}
+.m-17{margin: 17px;}
+.m-18{margin: 18px;}
+.m-19{margin: 19px;}
+.m-20{margin: 20px;}
+.m-21{margin: 21px;}
+.m-22{margin: 22px;}
+.m-23{margin: 23px;}
+.m-24{margin: 24px;}
+.m-25{margin: 25px;}
+.m-26{margin: 26px;}
+.m-27{margin: 27px;}
+.m-28{margin: 28px;}
+.m-29{margin: 29px;}
+.m-30{margin: 30px;}
+.m-35{margin: 35px;}
+.m-40{margin: 40px;}
+.m-45{margin: 45px;}
+.m-50{margin: 50px;}
+// MAR BOTTOM
+.m-b-10{margin-bottom: 10px;}
+.m-b-20{margin-bottom: 20px;}
+.m-b-30{margin-bottom: 30px;}
+.m-b-40{margin-bottom: 40px;}
+.m-b-50{margin-bottom: 50px;}
+// MAR TOP
+.m-t-10{margin-top: 10px;}
+.m-t-20{margin-top: 20px;}
+.m-t-30{margin-top: 30px;}
+.m-t-40{margin-top: 40px;}
+.m-t-50{margin-top: 50px;}
+// MAR LEFT
+.m-l-10{margin-left: 10px;}
+.m-l-20{margin-left: 20px;}
+.m-l-30{margin-left: 30px;}
+.m-l-40{margin-left: 40px;}
+.m-l-50{margin-left: 50px;}
+// MAR RIGHT
+.m-r-10{margin-right: 10px;}
+.m-r-20{margin-right: 20px;}
+.m-r-30{margin-right: 30px;}
+.m-r-40{margin-right: 40px;}
+.m-r-50{margin-right: 50px;}
+.marginpadding0{margin: 0px;padding: 0px;}
+.h100{height: 100%;}
+.w100{width: 100%;}
+.w20{width: 20%;}
+.w80{width: 80%;}
+.w50{width: 50%;}
+.overflow-hidden{overflow: hidden;}
+.displayblock{display: block !important;}
+.cursorP{cursor: pointer;}
+.text-and-left-right-lines-black {
+    position: relative;
+    color: black;
+    div {
+        width: 70px;
+        height: 4px;
+        position: absolute;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-left: none;
+        border-right: none;
+        top: 50%;
+    }
+    div:nth-child(1) {
+        left: calc(100% + 20px);
+    }
+    div:nth-child(2) {
+        right: calc(100% + 20px);
+    } // h1+div+text+div+/h1
+}
+.text-line-learn-more-button {
+    h1 {
+        font-size: 57px;
+        color: black;
+    }
+    h4 {
+        font-size: 17px;
+        margin-bottom: 20px;
+        color: #6c6c6c;
+    }
+    >div {
+        width: 38px;
+        margin-bottom: 20px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        margin: 0px auto 20px;
+        border-color: #ffcc0d;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+        color: #808080;
+    }
+    button {
+        border-color: #ffcc0d;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 15px 25px;
+        display: inline-block;
+        margin-top: 10px;
+        background-color: transparent;
+        color: black;
+        transition: all 0.3s linear;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+}
+.sliderinner {
+    i {
+        color: $color-yellow;
+    }
+    h5 {
+        padding-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 12px;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+    }
+    h3 {
+        padding-top: 10px;
+        color: $color-yellow;
+        font-style: italic;
+    }
+    .my-slider-text {
+        display: flex;
+        justify-content: space-between
+    }
+}
+.healthy-food-img-footer {
+    position: relative;
+    div {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        font-weight: 700;
+        font-size: 11px;
+        text-align: center;
+        color: $color-yellow !important;
+        padding: 10px 0px;
+    }
+    i {
+        color: $color-yellow;
+        padding-right: 6px;
+        font-size: 18px;
+    } 
+    //div.healthy-food-img-footer
+    // <div>
+    // <p>
+    // <i class="far fa-thumbs-up"></i>
+    // HEALTHY
+    // </p>
+    // </div>
+}
+// 
+// __________________________________________ END MY CLASESS __
+
+
+// __________________________________________ 1 SECTION HEADER CONTACT INFO __
+// 
+#headerContact {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding: 5px 0px 4px;
+    z-index: 10;
+    p {
+        cursor: pointer;
+        font-size: 80%;
+        color: $color-white;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    i {
+        cursor: pointer;
+        padding: 0px 5px;
+        color: $color-white;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    img {
+        width: 14px;
+        height: 14px;
+        margin: 5px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 1 SECTION HEADER CONTACT INFO __
+
+
+// __________________________________________ 2 SECTION LOGO AND NAVBAR __
+// 
+#navbar {
+    position: absolute;
+    width: 100%;
+    top: 49px;
+    z-index: 12;
+    .container {
+        // height: ;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+    }
+    .logo-div {
+        img {
+            margin: 10px 0px;
+        }
+    }
+    .flex-space-evenly {
+        position: relative;
+        img {
+            width: 20px;
+            height: 20px;
+            margin: 0px 5px 10px;
+        }
+        input[type=text] {
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            width: 250px;
+            height: 60px;
+            border: none;
+            background-color: rgba(60, 60, 60, 0.6);
+            font-size: 1.2em;
+            border-radius: 4px;
+            padding: 5px 0px 0px 30px;
+            &:focus {
+                outline: none;
+            }
+        }
+        #searchInput {
+            display: none;
+        }
+        .cartbox {
+            width: 180px;
+            height: 0px;
+            background-color: rgba(60, 60, 60, 0.6);
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s linear;
+            h5 {
+                &:hover {
+                    color: $color-yellow;
+                }
+            }
+        }
+        .cartparent:hover .cartbox {
+            height: 160px;
+        }
+        #cart:hover+#searchInput {
+            display: none !important;
+        }
+    }
+    #navbarlist {
+        position: relative;
+        z-index: 6;
+        ul {
+            position: relative;
+            list-style: none;
+            float: right;
+            li {
+                float: left;
+                a {
+                    padding: 20px 10% 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $color-gray;
+                }
+                ul {
+                    border-radius: 6px;
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    padding-top: 15px;
+                    transition: all 1s ease-out;
+                    transition-delay: 0.4s;
+                    li {
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+                        border-bottom: 1px solid $color-white;
+                        background-color: rgba(60, 60, 60, 0.6);
+                        top: 0px;
+                        a {
+                            padding: 10px 10px;
+                            transition: all 0.3s linear;
+                            font-size: 14px;
+                        }
+                        i {
+                            transform: rotate(-90deg);
+                            transition: all 0.3s linear;
+                            padding: 10px;
+                            color: $color-white;
+                        }
+                        &:hover i {
+                            transform: rotate(0deg);
+                        }
+                        ul {
+                            display: none;
+                            flex-direction: column;
+                            position: absolute;
+                            left: 100%;
+                            top: 0px;
+                            z-index: 2;
+                            padding-left: 5px;
+                        }
+                        &:hover ul {
+                            display: flex;
+                        }
+                        &:hover a {
+                            padding: 10px 0px 10px 20px
+                        }
+                    }
+                }
+                &:hover>ul {
+                    display: flex;
+                }
+            }
+        }
+        .hovereffect {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 3px;
+            .hoverline {
+                position: absolute;
+                height: 100%;
+                background-color: white;
+                transition: all 0.5s linear;
+            }
+        }
+    }
+    .open-nav-bar {
+        margin-top: 10px;
+        background-color: rgba(60, 60, 60, 0.6);
+        border-radius: 4px;
+        transition: all 1s ease-out;
+        transition-delay: 0.2s;
+        display: none;
+        .col-md-3 {
+            padding: 20px 30px;
+            border-left: 1px solid $color-white;
+        }
+        .col-md-3:nth-child(1) {
+            border: none;
+        }
+        ul {
+            list-style: none;
+            h4 {
+                color: $color-white;
+                padding-bottom: 15px;
+            }
+            li {
+                a {
+                    display: block;
+                    font-size: 13px;
+                    text-decoration: none;
+                    color: $color-white;
+                    padding: 5px 2px;
+                    &:hover{
+                        background-color: #8d8d8d;
+                    }
+                }
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 2 SECTION LOGO AND NAVBAR __
+
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _1_ HOME PAGE --------------------------
+// -----------------------------------------------------------------
+
+
+// __________________________________________ 3 SECTION HEADER SLIDER __
+// 
+#headerslider {
+    .container-fluid {
+        .row {
+            .col-12 {
+                padding: 0px;
+                li {
+                    margin-top: -40px;
+                }
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 3 SECTION HEADER SLIDER __
+
+
+
+// __________________________________________ 4 SECTION PERFECT ALWAYS ONLY __
+// 
+#pao {
+    margin-top: -50px;
+    .container {
+        .col-md-4 {
+            padding: 30px 40px;
+            div {
+                img {
+                    width: 44px;
+                    height: 44px;
+                    margin: 10px;
+                }
+                h3 {
+                    display: inline-block;
+                    font-size: 24px;
+                    padding: 0px 0px 0px 20px;
+                    color: black;
+                }
+                margin-bottom: 25px;
+            }
+            p {
+                margin-bottom: 20px;
+                text-align: justify;
+                color: black;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        .col-md-4:nth-child(1) {
+            background: #FFD44C;
+            border-top-left-radius: 6px;
+        }
+        .col-md-4:nth-child(2) {
+            background: #e9c051;
+        }
+        .col-md-4:nth-child(3) {
+            background: #d6b353;
+            border-top-right-radius: 6px;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 4 SECTION PERFECT ALWAYS ONLY __
+
+
+
+// __________________________________________ 5 SECTION ABOUT US __
+// 
+#aboutus {
+    h1 {
+        text-align: center;
+    }
+    padding-top: 65px;
+    padding-bottom: 55px;
+    .container {
+        .row {
+            .col-md-3 {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: 15px 0px;
+                }
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 5 SECTION ABOUT US __
+
+
+
+// __________________________________________ 6 SECTION  CHEF RECOMMENDS  __
+// 
+#chef {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/07/bg-section-18.jpg);
+    padding-top: 90px;
+    padding-bottom: 10px;
+    img {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    h1 {
+        color: $color-white;
+        font-size: 45px;
+        div {
+            border-color: $color-yellow;
+        }
+    }
+    .owl-carousel {
+        position: relative;
+        .owl-prev {
+            position: absolute;
+            top: -30%;
+            left: 48%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            top: -30%;
+            left: 52%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 6 SECTION  CHEF RECOMMENDS  __
+
+
+
+
+
+// __________________________________________ 7 SECTION PERFECT INGREDIENTS __
+// 
+#perfect-ingredients {
+    background-color: $color-white;
+    padding-top: 80px;
+    padding-bottom: 55px;
+    .perfect-ingredients-images {
+        >div {
+            width: 100%;
+            background-size: cover;
+            border-radius: 6px;
+            padding-top: 130%;
+            position: relative;
+            margin: 15px 0px;
+            >div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: all 0.3s linear;
+                &:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 6px;
+                }
+                h6 {
+                    font-size: 21px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    text-align: center;
+                    width: 90%;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 7 SECTION PERFECT INGREDIENTS __
+
+
+
+// __________________________________________ 8 SECTION SPRECIAL PROMOTION FOR THIS MONTH! __
+// 
+#special-promotion {
+    background-color: #ffd44c;
+    height: 180px;
+    .col-sm-12 {
+        div {
+            h2 {
+                font-size: 33px;
+                margin-bottom: 8px;
+                color: black;
+            }
+            p {
+                color: black;
+            }
+        }
+        i {
+            color: black;
+            font-size: 60px;
+            margin-right: 40px;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 8 SECTION SPRECIAL PROMOTION FOR THIS MONTH! __
+
+
+
+// __________________________________________ 9 SECTION HOW TO GET TO US __
+// 
+#how-to {
+    padding: 55px 0px;
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/07/bg-section-17.jpg);
+    p {
+        font-size: 13px;
+    }
+    span {
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    .how-to-1 {
+        display: flex;
+        flex-direction: column;
+        p {
+            margin-bottom: 20px;
+            span {
+                font-weight: bold;
+            }
+        }
+        button {
+            border: none;
+            background-color: transparent;
+            color: $color-yellow;
+            border-radius: 3px;
+            border: 1px solid $color-yellow;
+            padding: 10px 10px;
+        }
+    }
+    .how-to-2 {
+        display: flex;
+        flex-direction: column;
+        i {
+            display: inline-block;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 9 HOW TO GET TO US __
+
+// __________________________________________ 10 SECTION RECENT ARTICLES __
+// 
+#recent-articles {
+    .w50>p {
+        line-height: 18px;
+        font-size: 12px;
+        font-style: italic;
+    }
+    p {
+        font-size: 13px;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    a {
+        line-height: 1.7;
+        text-decoration: none;
+        font-weight: bold;
+        color: $color-black;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    h3 {
+        font-size: 35px;
+    }
+    img {
+        width: 100%;
+        border-radius: 5px;
+        transition: 1s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+// 
+// __________________________________________ END OF 10 SECTION RECENT ARTICLES __
+
+// __________________________________________ 11 SECTION BEST TECHNIQUES __
+// 
+#best-techniques {
+    position: relative;
+    video {
+        width: 100%;
+    }
+    h1 {
+        position: absolute;
+        top: 20vw;
+        left: 24vw;
+        margin: 0px;
+        padding: 0px;
+        font-size: 8vw;
+        text-align: center;
+        font-style: italic;
+    }
+    h3 {
+        position: absolute;
+        top: 18vw;
+        left: 33vw;
+        margin: 0px;
+        padding: 0px;
+        font-size: 4vw;
+        color: $color-yellow;
+        font-style: italic;
+    }
+}
+// 
+// __________________________________________ END OF 11 SECTION BEST TECHNIQUES __
+
+// __________________________________________ 12 SECTION GALLERY __
+// 
+#gallery {
+    #galleryimg1 {
+        height: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    .iteminner {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    span {
+        color: $color-gray;
+        text-align: center;
+        font-size: 20px;
+    }
+    a {
+        color: $color-yellow;
+    }
+    .owl-carousel {
+        position: relative;
+        .owl-prev {
+            position: absolute;
+            top: -40%;
+            left: 48%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            top: -40%;
+            left: 52%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 12 SECTION GALLERY __
+
+// __________________________________________ 13 SECTION TESTIMONIAL __
+// 
+#testimonial {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/07/bg-section-2.jpg);
+    h1 {
+        color: $color-yellow;
+        font-size: 45px;
+        font-style: italic;
+    }
+    h5 {
+        color: $color-white;
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+        width: 550px;
+    }
+    p {
+        span {
+            color: $color-yellow;
+        }
+    }
+    .owl-carousel {
+        position: relative;
+        .owl-prev {
+            position: absolute;
+            top: -40%;
+            left: 48%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            top: -40%;
+            left: 52%;
+            font-size: 4em;
+            color: white;
+            &:hover {
+                background-color: transparent;
+                color: $color-yellow;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+// 
+// __________________________________________ END OF 13 SECTION TESTIMONIAL __
+
+// __________________________________________ 14 SECTION FOOTER __
+// 
+#footer {
+    background-color: #232323;
+    p {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    h4 {
+        font-size: 22px;
+        font-weight: 400;
+        font-style: italic;
+        font-weight: 400;
+        padding: 30px 0px
+    }
+    i {
+        padding-right: 10px;
+    }
+    .p-t-10 {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+        &:hover p {
+            color: $color-yellow;
+        }
+    }
+    .lastfooter {
+        background-color: #0f0f0f;
+    }
+}
+// 
+// __________________________________________ END OF 14 SECTION FOOTER __
+
+
+
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _2_ MENU MIXED --------------------------
+// -----------------------------------------------------------------
+
+// __________________________________________ 1 SECTION MENU MIXED __
+// 
+#menu-mixed {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/themes/recibo/images/page-title-background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    h1 {
+        font-size: 500%;
+        font-style: italic;
+        text-align: center;
+        padding: 240px 0px 40px;
+    }
+}
+// 
+// __________________________________________ END OF 1 SECTION MENU MIXED __
+
+// __________________________________________ 2 SECTION APPETIZERS __
+// 
+#appetizers {
+    p {
+        color: $color-gray;
+        font-size: 12px;
+        margin-top: 0px;
+        padding-top: 0px;
+        letter-spacing: 1.3px
+    }
+    h5 {
+        color: $color-black;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    h4 {
+        color: $color-yellow;
+        font-size: 24px;
+        line-height: 1;
+        font-style: italic;
+        margin-left: 10px;
+    }
+    h1 {
+        div {
+            left: 40%;
+            width: 60%;
+        }
+    }
+    .overflow-hidden {
+        flex-grow: 1;
+        border-bottom: 1px dashed black;
+        height: 3;
+        padding: 0px 20px;
+    }
+}
+// 
+// __________________________________________ END OF 2 SECTION MAPPETIZERS __
+
+// __________________________________________ 3 SECTION BRUNCHES __
+// 
+#brunches {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/06/bg-section-6.jpg);
+    background-size: cover;
+    h1 {
+        font-size: 75px;
+        text-align: center;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 21px;
+        text-align: center;
+        font-style: italic;
+    }
+}
+// 
+// __________________________________________ END OF 3 SECTION BRUNCHES __
+
+// __________________________________________ 4 SECTION FOOD MENU __
+// 
+#food-menu {
+    img {
+        width: 100%;
+        border-radius: 6px;
+        transition: all 0.3s linear
+    }
+    h5 {
+        color: $color-black;
+    }
+    p {
+        color: $color-gray;
+    }
+    .item {
+        &:hover img {
+            transform: scale(1.1);
+        }
+        padding: 20px 10px;
+    }
+    .my-slider-img {
+        overflow: hidden;
+        border-radius: 6px;
+    }
+}
+// 
+// __________________________________________ END OF 4 SECTION FOOD MENU __
+
+// __________________________________________ 5 SECTION DINNER __
+// 
+#dinner {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/06/bg-section-9.jpg);
+    background-size: cover;
+    h1 {
+        font-size: 75px;
+        text-align: center;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 21px;
+        text-align: center;
+        font-style: italic;
+    }
+}
+// 
+// __________________________________________ END OF 5 SECTION DINNER __
+
+// __________________________________________ 6 SECTION FOOD MENU 2 __
+// 
+#food-menu-2 {
+    img {
+        width: 100%;
+        transition: all 0.3s linear;
+    }
+    .col-sm-12 {
+        >div {
+            overflow: hidden;
+            position: relative;
+            border-radius: 4px;
+            &:hover img {
+                transform: scale(1.3);
+            }
+            >div {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                height: 100%;
+                h5 {
+                    padding-top: 10px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 12px;
+                    margin-bottom: 4px;
+                    letter-spacing: 1px;
+                }
+                h4 {
+                    padding-top: 10px;
+                    color: $color-yellow;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    .healthy-recommendeddd {
+        .recommendeddd {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            justify-content: flex-end;
+        }
+        p {
+            font-weight: 700;
+            font-size: 11px;
+            color: $color-yellow !important;
+            padding: 10px 10px;
+            float: right;
+        }
+        i {
+            color: $color-yellow;
+            padding-right: 6px;
+            font-size: 18px;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 6 SECTION FOOD MENU 2 __
+
+// __________________________________________ 7 SECTION DESSERT __
+// 
+#dessert {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/06/bg-section-7.jpg);
+    background-size: cover;
+    h1 {
+        font-size: 75px;
+        text-align: center;
+        font-style: italic;
+        padding: 14% 0px;
+    }
+}
+// 
+// __________________________________________ END OF 7 SECTION DESSERT __
+
+// __________________________________________ 8 SECTION COOKIES’N CREAM __
+// 
+#cookies-cream {
+    padding: 60px 0px;
+    p {
+        color: $color-gray;
+        font-size: 12px;
+        margin-top: 0px;
+        padding-top: 0px;
+        letter-spacing: 1.3px
+    }
+    h5 {
+        color: $color-black;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        font-weight: 600;
+        padding-right: 10px;
+    }
+    h4 {
+        color: $color-yellow;
+        font-size: 24px;
+        line-height: 1;
+        font-style: italic;
+        padding-left: 10px;
+    }
+    h1 {
+        div {
+            left: 40%;
+            width: 60%;
+        }
+    }
+    .border-selector {
+        position: relative;
+        border: 1px solid $color-yellow;
+        padding: 10px;
+        .p-position {
+            font-weight: 700;
+            font-size: 11px;
+            text-align: center;
+            color: $color-yellow !important;
+            padding: 0px 10px 10px;
+            ;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        i {
+            color: $color-yellow;
+            padding-right: 6px;
+            font-size: 18px;
+        }
+    }
+    .overflow-hidden {
+        flex-grow: 1;
+        border-bottom: 1px dashed black;
+        height: 3;
+        padding: 0px 20px;
+    }
+}
+// 
+// __________________________________________ END OF 8 SECTION COOKIES’N CREAM __
+
+
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _3_ CHEFS --------------------------
+// -----------------------------------------------------------------
+
+
+
+// __________________________________________ 1 SECTION  __ MEET THE TEAM __
+// 
+#meet-the-team {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/themes/recibo/images/page-title-background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    h1 {
+        font-size: 500%;
+        font-style: italic;
+        text-align: center;
+        padding: 240px 0px 40px;
+    }
+}
+// 
+// __________________________________________ END OF 1 SECTION __ MEET THE TEAM __
+
+// __________________________________________ 2 SECTION __ CHEF STUFF __
+// 
+#chef-stuff {}
+.stuff {
+    i {
+        color: #333333;
+        font-size: 22px;
+        padding: 10px 6px;
+    }
+    h3 {
+        font-size: 24px;
+        color: $color-yellow;
+        font-weight: 800;
+        line-height: 1.3;
+        font-style: italic;
+        text-align: center;
+        padding-top: 20px;
+    }
+    h5 {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.7;
+        letter-spacing: 2px;
+        color: $color-gray;
+    }
+    p {
+        font-size: 13px;
+        color: $color-black;
+        text-align: center;
+        padding: 20px 0px
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+// 
+// __________________________________________ END OF 2 SECTION __ CHEF STUFF __
+
+// __________________________________________ 3 SECTION __ GREAT TEAM __
+// 
+#great-team {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/06/bg-section-15.jpg);
+    padding-top: 222px;
+    padding-bottom: 0px;
+    background-position: center -28.6516px;
+    .col-sm-12 {
+        background-color: #2e353a;
+        h1 {
+            font-style: italic;
+            font-size: 35px;
+            font-weight: 600;
+            padding: 15% 15%;
+        }
+        p {
+            padding: 0px 15% 15%;
+            font-size: 13px;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 3 SECTION __ GREAT TEAM __
+
+// __________________________________________ 4 SECTION CHEF STUFF 2 __
+// 
+#chef-stuff-2 {
+    padding: 40px 0px;
+}
+// 
+// __________________________________________ END OF 4 SECTION CHEF STUFF 2 __
+
+
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _4_ RESERVATION --------------------------
+// -----------------------------------------------------------------
+
+// __________________________________________ 1 RESERVATION FORM __
+// 
+#reservation-form {
+    padding: 190px 0px 0px;
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/uploads/2015/06/bg-section-19.jpg);
+    background-position: center -30px;
+    input {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        height: 50px;
+        padding: 16px 19px 16px 16px;
+        font-size: 13px;
+        color: $color-gray;
+    }
+    #input-notes {
+        height: 20vw;
+    }
+    button {
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        color: $color-white;
+        background-color: #222222;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+}
+// 
+// __________________________________________ END OF 1 RESERVATION FORM __
+
+// __________________________________________ 2 CONTACT INFO AND OPENING HOURS __
+// 
+#contact-info {
+    p {
+        font-size: 13px;
+        color: $color-gray;
+    }
+    span {
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        color: $color-black;
+    }
+    i {
+        color: $color-gray;
+    }
+    .how-to-1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #ededed;
+        p {
+            color: $color-gray;
+            margin-bottom: 20px;
+        }
+        button {
+            border: none;
+            background-color: transparent;
+            color: $color-yellow;
+            border-radius: 3px;
+            border: 1px solid $color-yellow;
+            padding: 10px 10px;
+        }
+    }
+    .how-to-2 {
+        display: flex;
+        flex-direction: column;
+        i {
+            display: inline-block;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 2 CONTACT INFO AND OPENING HOURS __
+
+
+// __________________________________________ 3 SPECIAL PROMOTIONS __
+// 
+#special-promotions-for {
+    background-color: #ffd44c;
+    height: 180px;
+    .col-sm-12 {
+        div {
+            h2 {
+                font-size: 33px;
+                margin-bottom: 8px;
+                color: black;
+            }
+            p {
+                color: black;
+            }
+        }
+        i {
+            color: black;
+            font-size: 60px;
+            margin-right: 40px;
+        }
+    }
+}
+// 
+// __________________________________________ END OF 3 SPECIAL PROMOTIONS __
+
+
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _4_ BLOG MEDIUM WITH BOTH SIDEBAR --------------------------
+// -----------------------------------------------------------------
+
+// __________________________________________ 1 BLOG MEDIUM WITH BOTH SIDEBAR __
+// 
+#blog-medium-sidebar {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/themes/recibo/images/page-title-background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    h1 {
+        font-size: 500%;
+        font-style: italic;
+        text-align: center;
+        padding: 240px 0px 0px;
+    }
+    p {
+        font-size: 19px;
+        display: block;
+        text-align: center;
+    }
+}
+// 
+// __________________________________________ END OF 1 BLOG MEDIUM WITH BOTH SIDEBAR __
+
+// __________________________________________ 2 BLOG MEDIUM WITH BOTH SIDEBAR FULL BODY __
+// 
+#blog-medium-sidebar-full-body {}
+.blog-full-body-h1 {
+    font-style: italic;
+    color: #383838;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.popular-posts {
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    >div {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgb(177, 177, 177);
+        >div:nth-child(1) {
+            width: 30%;
+            background-color: red;
+            >img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        >div:nth-child(2) {
+            width: 70%;
+            >h4 {
+                padding: 10px;
+                margin: 0px;
+                font-size: 13px;
+                color: #3f3f3f;
+                &:hover {
+                    color: #edb40b;
+                }
+            }
+            >div {
+                padding-left: 10px;
+                >i {
+                    color: #7a7a7a;
+                    font-size: 15px;
+                    margin-right: 9px;
+                }
+                >p {
+                    color: #7a7a7a;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.ifame-video {
+    padding-top: 20px;
+    width: 100%;
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    iframe {
+        width: 100%;
+        border: none;
+        width: 100%;
+    }
+}
+.categories {
+    padding-top: 20px;
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    ul {
+        li {
+            border-bottom: 1px solid gray;
+            list-style: none;
+            padding: 10px 0px;
+            i {
+                padding-right: 20px;
+                color: $color-gray;
+            }
+            a {
+                font-size: 13px;
+                color: $color-gray;
+                text-decoration: none;
+                &:hover {
+                    color: $color-yellow;
+                }
+                span {
+                    font-size: 13px;
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+}
+.post-slider {
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    } 
+    // .carousel-item{
+    //     position: relative;
+    //     >div{
+    //         position: absolute;
+    //         bottom: 0px;
+    //         left: 0px;
+    //         width: 100%;
+    //     }
+    // }
+}
+.sound-cloud {
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+}
+.blog-posts {
+    .row {
+        >.col-sm-12:nth-child(1) {
+            margin: 25px 0px;
+            >div {
+                width: 100%;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 6px;
+                }
+                .sticky-post {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    background-color: #232323;
+                    display: flex;
+                    justify-content: center;
+                    i {
+                        padding: 0px 5px 0px 15px;
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 12px;
+                        padding: 7px 15px 7px 5px;
+                        font-weight: bold;
+                        display: block;
+                    }
+                }
+            }
+        }
+        >.col-sm-12:nth-child(2) {
+            margin: 25px 0px;
+            .row {
+                .col-sm-3,
+                .col-sm-2 {
+                    align-items: flex-start;
+                    .sticker {
+                        position: relative;
+                        -webkit-box-sizing: content-box;
+                        -moz-box-sizing: content-box;
+                        box-sizing: content-box;
+                        width: 0;
+                        height: 90px;
+                        border: 36px solid $color-yellow;
+                        border-top: 0 solid;
+                        border-bottom: 35px solid rgba(0, 0, 0, 0);
+                        font: normal 100%/normal Arial, Helvetica, sans-serif;
+                        color: rgba(0, 0, 0, 1);
+                        -o-text-overflow: clip;
+                        text-overflow: clip;
+                        >div {
+                            h1 {
+                                font-size: 34px;
+                                font-weight: bold;
+                                padding-bottom: 5px;
+                                border-bottom: 1px solid $color-black;
+                                color: $color-black;
+                            }
+                            h4 {
+                                font-size: 15px;
+                                font-weight: bold;
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+                .col-sm-9,
+                .col-sm-10 {
+                    .w50>p {
+                        line-height: 18px;
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                    p {
+                        font-size: 13px;
+                        padding-top: 10px;
+                        color: $color-gray;
+                    }
+                    h4 {
+                        font-size: 22px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: $color-black;
+                        transition: all 0.4s linear;
+                        padding-top: 10px;
+                        &:hover {
+                            color: $color-yellow;
+                        }
+                    }
+                    a {
+                        line-height: 1.7;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $color-black;
+                        transition: all 0.4s linear;
+                        padding-top: 40px;
+                        &:hover {
+                            color: $color-yellow;
+                        }
+                    }
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+.text-widget {
+    padding-top: 20px;
+    >h1 {
+        font-style: italic;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    >p {
+        font-size: 13px;
+        color: $color-gray;
+    }
+}
+.food-widget {
+    .col-md-4,
+    .col-sm-3 {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    img {
+        border-radius: 5px;
+    }
+}
+.tag-cloud {
+    >div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a {
+        color: $color-white;
+        background-color: $color-black;
+        transition: all 0.3s linear;
+        text-decoration: none;
+        padding: 6px;
+        margin: 5px 5px 0px 0px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.twitter {
+    i {
+        color: $color-gray;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    p {
+        color: $color-gray;
+        font-size: 13px;
+        line-height: 1.7;
+        padding-bottom: 15px;
+    }
+    li {
+        margin: 20px 0px;
+        border-bottom: 0.5px solid $color-gray;
+    }
+}
+.pagination-pages {
+    a {
+        margin-left: 5px;
+        color: #f9f9f9;
+        background-color: #212121;
+        transition: all 0.4s linear;
+        font-weight: bold;
+        &:hover {
+            background-color: $color-yellow;
+            color: #212121;
+        }
+    }
+    .active {
+        background-color: $color-yellow;
+    }
+}
+// 
+// __________________________________________ END OF 2 BLOG MEDIUM WITH BOTH SIDEBAR FULL BODY __
+
+
+// -----------------------------------------------------------------
+// ------------------ PAGE _4_ BLOG FULL WITH RIGHT SIDEBAR --------------------------
+// -----------------------------------------------------------------
+
+// __________________________________________ 1 BLOG FULL WITH RIGHT SIDEBAR __
+// 
+#blog-full-sidebar {
+    background-image: url(https://demo.goodlayers.com/recibo/wp-content/themes/recibo/images/page-title-background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    h1 {
+        font-size: 500%;
+        font-style: italic;
+        text-align: center;
+        padding: 240px 0px 0px;
+    }
+    p {
+        font-size: 19px;
+        display: block;
+        text-align: center;
+    }
+}
+// 
+// __________________________________________ END OF 1 BLOG FULL WITH RIGHT SIDEBAR __
+
+
+// __________________________________________ 2 BLOG MEDIUM WITH BOTH SIDEBAR FULL BODY __
+// 
+#blog-full-body-full-body {
+    audio {
+        box-shadow: 0px 0px 10px 0px black;
+        width: 100%;
+    }
+    .blog-posts-text {
+        .yellow {
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1.5;
+                padding: 20px 0px;
+                background-color: #ffcc0d;
+                border-radius: 5px;
+                margin-bottom: 40px;
+            }
+            border-bottom: 1px dashed gray;
+        }
+        .not-yellow {
+            i {
+                font-size: 3em;
+                color: black;
+            }
+            h4 {
+                margin-bottom: 12px;
+                font-weight: bold;
+                font-size: 26px;
+                font-style: normal;
+                line-height: 1.4;
+                color: #8d8d8d;
+            }
+            p {
+                color: #ffcc0d;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+    iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+    }
+}
+// 
+// __________________________________________ END OF 2 BLOG MEDIUM WITH BOTH SIDEBAR FULL BODY __
+
+
+@media (max-width: 1070px) {
+    #navbar {
+        top: 80px;
+    }
+    .navbarclass {
+        width: 100%;
+    }
+}
+
+@media (max-width: 790px) {
+    #shortcodes {
+        display: none;
+    }
+}
+
+@media (max-width: 790px) {
+    #shortcodes {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    #features-nav {
+        display: none;
+    }
+}
+@media (max-width: 470px) {
+    #navbarlist ul {
+        display: none;
+    }
+}
+
+.ico {
+    display: none;
+}
+
+@media (max-width: 470px) {
+    .ico {
+        display: block;
+    }
+}
